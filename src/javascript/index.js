@@ -9,6 +9,7 @@
 
 $(document).ready(function() {
 
+
 /*
     $("#boton").click(function() {
         $('#boton').text('Me has pulsado... me voy de vacaciones a relajarme un poquito.');
@@ -33,7 +34,7 @@ document.getElementById('boton').onclick = function() {
 // Más legible: this.innerText="Ya me has pulsado"
 //    alert('Me ha presionado... me voy de vacaciones a relajarme');
 //}
-
+/*
 accionParaElClick = function(event){
     $(this).text("Bye bye");
 }
@@ -41,6 +42,24 @@ $("button").on("click",accionParaElClick); // Debajo del accionParaElClick
 
 
 console.log('Hola mundo... por tercera vez');
+*/
+
+/*
+solicitudes = ["Mensaje1","Hola","Adiós"];
+for (i=0; i<solicitudes.length; i++){
+    $("#maestro").append(
+        $("<li>").text(solicitudes[i])
+    );
+}
+*/
+
+let solicitudes = [solicitud, ksolicitud, solicitud];
+
+for (i=0; i<solicitudes.length;i++){
+    $("#maestro").append(
+        $("<li>").text(solicitudes.nombre)
+    );
+}
 
 
 });
